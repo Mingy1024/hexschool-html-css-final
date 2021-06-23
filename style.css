@@ -269,4 +269,5 @@ textarea:focus,input:focus{
 }
 .connection a:hover{
     color: blueviolet;
+    text-decoration: underline;
 }
