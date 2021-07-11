@@ -1,1 +1,1 @@
-# hexschool-html-css-final
+# Hexschool-jQuery-final
