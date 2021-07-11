@@ -108,12 +108,13 @@ h1 a {
     display: block;
     color: #0fcf9f;
     text-decoration: none;
-    border: 2px solid transparent;
+    border-bottom: 5px solid transparent;
     padding: 20px;
+    transition: all 300ms;
 }
-.menu li a:hover {
+.menu >li>a:hover {
     color: #000;
-    text-decoration: 4px underline #0fcf9f;
+    border-bottom: 5px solid #0fcf9f;
 }
 .banner{
     height: 345px;
@@ -270,4 +271,39 @@ h1 a {
 .connection a:hover{
     color: blueviolet;
     text-decoration: underline;
+}
+.back{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.back img{
+    width: 70px;
+    height: 70px;
+}
+.menu>li{
+    position: relative;
+}
+.dropdown-list{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+}
+.dropdown-list a{
+    padding: 10px 0;
+    color: #4460a0;
+}
+.dropdown-list a:hover{
+    background: #0fcf9f;
+    color: #f7f7f7;
+}
+.menu a.active{
+    background: pink;
+    color: #000;
+    border-bottom: 5px solid #0fcf9f;
+}
+.menu ul{
+    display: none;
 }
